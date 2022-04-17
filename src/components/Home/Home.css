@@ -1,17 +1,54 @@
-.home_main{
+.home_main {
   margin-bottom: 0.5rem;
 }
-.home_landing{
-  position: relative;
+.wrapper {
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  perspective: 10px;
 }
-.home_landing_img{
+.home_landing {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+.home_landing_img {
   width: 100%;
   height: calc(100% - 20px);
   object-fit: cover;
 }
-.title{
+.waterwave {
   position: absolute;
-  font-family: 'Rubik';
+  z-index: -2;
+  top: 17%;
+  height: 78%;
+  transform: translateZ(-10px) scale(2);
+}
+.trees {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 190px;
+  height: 100px;
+}
+.tab1 {
+  position: absolute;
+  z-index: -1;
+  transform: translateZ(-5px) scale(1.5);
+}
+.sky {
+  position: absolute;
+  z-index: -2;
+  top: -2%;
+  transform: translateZ(-10px) scale(2);
+}
+.title {
+  position: absolute;
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 500;
   font-size: 5rem;
@@ -21,29 +58,30 @@
 
   color: #000000;
   left: 50%;
-  transform: translate(-50%, 0%);
+  transform: translate(-50%, -100%);
 }
-.landing_section{
+.landing_section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  transform: translateZ(0px) translateY(50%) scale(1);
 }
-.welcome{
-  font-family: 'Arial';
-font-style: normal;
-font-weight: 400;
-font-size: 50px;
-line-height: 44px;
-/* identical to box height, or 88% */
+.welcome {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 44px;
+  /* identical to box height, or 88% */
 
-letter-spacing: 0.02em;
+  letter-spacing: 0.02em;
 
-color: #0B4874;
-position: relative;
-margin-bottom: 1rem;
+  color: #0b4874;
+  position: relative;
+  margin-bottom: 1rem;
 }
-.welcome::before{
+.welcome::before {
   content: "";
   display: block;
   width: 120px;
@@ -53,7 +91,7 @@ margin-bottom: 1rem;
   top: 50%;
   position: absolute;
 }
-.welcome::after{
+.welcome::after {
   content: "";
   display: block;
   width: 120px;
@@ -63,83 +101,97 @@ margin-bottom: 1rem;
   top: 50%;
   position: absolute;
 }
-.manu{
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 35px;
-line-height: 44px;
-/* identical to box height, or 126% */
+.manu {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 44px;
+  /* identical to box height, or 126% */
 
-letter-spacing: 0.02em;
+  letter-spacing: 0.02em;
 
-color: #636262;
-
+  color: #636262;
 }
-.landing_section{
+
+.landing_section {
+  margin-top: 15% !important;
   padding: 0 8rem;
   margin-top: 1rem;
 }
-.section_card{
+.section_card {
   display: flex;
-  background: #E7F6FF;
-  border: 4px dashed #C8E0FC;
+  background: #e7f6ff;
+  border: 4px dashed #c8e0fc;
   box-sizing: border-box;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
   border-radius: 0px 20px 20px 0px;
   padding: 1rem 2rem;
   gap: 2rem;
   min-height: 50vh;
-  margin-top: 1rem;    
+  margin-top: 1rem;
   max-width: 70vw;
 }
-.drinks{
+.drinks {
   width: 200%;
   height: 100%;
   left: -94%;
   position: relative;
 }
-
-
-
-
-@media(max-width:768px){
-  .section_card{
+.landing{
+  display: none;
+}
+@media (max-width: 768px) {
+  .sky,
+  .tab1,
+  .waterwave,
+  .trees {
+    display: none !important;
+  }
+  .landing{
+    display: block;
+  }
+  .home_landing{
+    height: auto;
+  }
+  .landing_section{
+    transform: unset;
+  }
+  .section_card {
     flex-direction: column;
     padding: 1rem;
   }
-  .drinks{
+  .drinks {
     width: 100%;
     left: 0%;
   }
-  .landing_section{
+  .landing_section {
     padding: 0 2rem;
   }
-  .title{
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-
-  }
-  .welcome{
+  .title {
     font-size: 1.5rem;
     line-height: 1.5rem;
   }
-  .welcome::before{
+  .welcome {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .welcome::before {
     width: 5vw;
     left: -15%;
   }
-  .welcome::after{
+  .welcome::after {
     width: 5vw;
     right: -15%;
   }
 }
 
-@media(max-width:600px){
-  .welcome::before{
+@media (max-width: 600px) {
+  .welcome::before {
     width: 2vw;
     left: -4%;
   }
-  .welcome::after{
+  .welcome::after {
     width: 2vw;
     right: -4%;
   }
