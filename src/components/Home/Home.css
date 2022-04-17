@@ -115,4 +115,32 @@ color: #636262;
   .landing_section{
     padding: 0 2rem;
   }
+  .title{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+
+  }
+  .welcome{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .welcome::before{
+    width: 5vw;
+    left: -15%;
+  }
+  .welcome::after{
+    width: 5vw;
+    right: -15%;
+  }
+}
+
+@media(max-width:600px){
+  .welcome::before{
+    width: 2vw;
+    left: -4%;
+  }
+  .welcome::after{
+    width: 2vw;
+    right: -4%;
+  }
 }

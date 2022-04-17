@@ -67,3 +67,11 @@ margin-bottom: 1rem;
 .products_card_body{
   margin-top: 6rem;
 }
+@media(max-width:600px){
+  .products{
+    font-size: 1.5rem;
+  }
+  .products::before,.products::after{
+    width: 50px;
+  }
+}
