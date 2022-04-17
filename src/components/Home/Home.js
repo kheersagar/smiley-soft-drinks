@@ -8,6 +8,7 @@ import "./Home.css";
 import landing from "../../Images/landing.svg"
 import drinks from "../../Images/drinks.svg"
 import Products from '../Products/Products';
+import Reviews from '../Reviews/Reviews';
 
 function Home() {
 
@@ -39,6 +40,7 @@ function Home() {
        </div>
        {/*  */}
        <Products />
+       <Reviews />
     </div>
   )
 }
