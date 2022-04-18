@@ -24,7 +24,7 @@
 .waterwave {
   position: absolute;
   z-index: -2;
-  top: 17%;
+  top: 10%;
   height: 78%;
   transform: translateZ(-10px) scale(2);
 }
@@ -150,9 +150,7 @@
   }
   .landing{
     display: block;
-  }
-  .home_landing{
-    height: auto;
+    height: 100%;
   }
   .landing_section{
     transform: unset;
@@ -169,8 +167,10 @@
     padding: 0 2rem;
   }
   .title {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 600;
+    margin-top: -10rem;
   }
   .welcome {
     font-size: 1.5rem;
