@@ -13,6 +13,7 @@ import sky from "../../Images/sky.png"
 import drinks from "../../Images/drinks.svg"
 import Products from '../Products/Products';
 import Reviews from '../Reviews/Reviews';
+import Footer from '../Footer/Footer';
 
 function Home() {
 
@@ -51,6 +52,7 @@ function Home() {
        {/*  */}
        <Products />
        <Reviews />
+        <Footer />
     </div>
     </div>
   )

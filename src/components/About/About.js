@@ -3,6 +3,7 @@ import "./About.css";
 
 import about_cmp_1 from "../../Images/about_cmp_1.svg";
 import NavigationBar from "../NavigationBar/NavigationBar";
+import Footer from "../Footer/Footer";
 function About() {
   function Card({id,animation}) {
     return (
@@ -53,6 +54,7 @@ function About() {
           <Card  id="3" animation="fade-left"/>
         </div>
       </div>
+      <Footer/>
     </>
   );
 }

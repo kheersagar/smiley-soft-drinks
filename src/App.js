@@ -18,7 +18,8 @@ function App() {
 			duration: 1000,
 			once: false,
 			mirror: true,
-			anchorPlacement: 'bottom-bottom'
+			anchorPlacement: 'bottom-bottom',
+      disable:'mobile'
 		});
 	}, []);
 
