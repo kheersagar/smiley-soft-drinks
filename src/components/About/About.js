@@ -36,7 +36,7 @@ function About() {
             <div>
               <img src={about_cmp_1} className="about_cmp_card_img" />
             </div>
-            <div>
+            <div className="about_desc">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris

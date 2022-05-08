@@ -23,7 +23,7 @@ function Home() {
     <div className='wrapper'>
     <div className='home_landing'>
       <div className='title'>
-      The Drink of Odisha
+      The <span style={{color:'#5100FD'}}>Drink</span> of Odisha
       </div>
           {/* <img src={landing} className='home_landing_img'/> */}
           <img src={landing} className='home_landing_img landing'/>
