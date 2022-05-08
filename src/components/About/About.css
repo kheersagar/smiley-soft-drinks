@@ -1,0 +1,89 @@
+.about_main {
+  padding: 1rem 3rem;
+  margin-top: 2rem;
+  background-color: #f1f1f1;
+}
+.about_landing_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about_cmp_title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  /* identical to box height, or 138% */
+
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+
+  color: rgba(1, 26, 49, 0.89);
+}
+.about_cmp_card {
+  display: flex;
+  gap: 1rem;
+}
+.about_cmp_card_img {
+  max-width: 300px;
+}
+.card_main {
+  display: flex;
+  margin: 1rem 0;
+  background: #ffffff;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+.card_img{
+  height: 100%;
+  max-width: 300px;
+}
+.card_description {
+  padding: 2rem;
+}
+.name {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  /* identical to box height, or 138% */
+
+  letter-spacing: 0.02em;
+
+  color: #000000;
+}
+.role{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 39px;
+/* identical to box height, or 139% */
+
+letter-spacing: 0.02em;
+
+color: #37426D;
+
+}
+.about_role{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 35px;
+/* or 175% */
+
+letter-spacing: 0.02em;
+
+color: #000000;
+}
+
+@media(max-width: 768px){
+  .about_cmp_card,.card_main{
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+}

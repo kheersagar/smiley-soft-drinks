@@ -15,7 +15,7 @@ import { Card } from "react-bootstrap";
 function Products() {
   function Cards(props) {
     return (
-      <Card  className="products_card">
+      <Card  className="products_card" >
         <Card.Img variant="top" src={props.img}  className="products_card_img"/>
         <Card.Body className="products_card_body">
           <Card.Title>{props.lable}</Card.Title>
@@ -53,9 +53,9 @@ function Products() {
       <div className="products">
         Our Products <img src={veg} />
       </div>
-      <div className="card_section">
-        {arr.map((item) => {
-          return <Cards img={item.Image} lable={item.lable}/>;
+      <div className="card_section" >
+        {arr.map((item,index) => {
+          return <Cards img={item.Image} lable={item.lable} key={index}/>;
         })}
       </div>
     </div>
